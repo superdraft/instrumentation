@@ -1,0 +1,14 @@
+node.name: elasticsearch.production.superdraft.io
+
+path.data: /var/lib/elasticsearch
+path.logs: /var/log/elasticsearch
+
+network.host: 0.0.0.0
+http.port: 9200
+
+node.master: true
+cluster.initial_master_nodes: ["elasticsearch.production.superdraft.io"]
+#discovery.seed_hosts: ["elasticsearch.production.superdraft.io"]
+
+#xpack.security.enabled: true
+#xpack.security.http.ssl.enabled: true
